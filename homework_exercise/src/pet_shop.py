@@ -25,8 +25,6 @@ def get_pets_by_breed(shop, breed):
     return breed_pets
 
 def find_pet_by_name(shop, name):
-    named_pet = {}
     for pet in shop["pets"]:
         if pet["name"] == name:
-            named_pet.update(pet)
-    return named_pet
+            return pet
